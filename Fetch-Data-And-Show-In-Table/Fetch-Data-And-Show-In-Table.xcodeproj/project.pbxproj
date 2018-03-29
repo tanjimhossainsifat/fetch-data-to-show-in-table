@@ -14,6 +14,7 @@
 		3C965D5A206D68C0009972E6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D58206D68C0009972E6 /* MainViewController.m */; };
 		3C965D5B206D68C0009972E6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C965D59206D68C0009972E6 /* MainViewController.xib */; };
 		3C965D5F206D6A83009972E6 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D5E206D6A83009972E6 /* Info.m */; };
+		3C965D63206D6B84009972E6 /* FetchInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D62206D6B84009972E6 /* FetchInfoHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		3C965D59206D68C0009972E6 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		3C965D5D206D6A83009972E6 /* Info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		3C965D5E206D6A83009972E6 /* Info.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		3C965D61206D6B84009972E6 /* FetchInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchInfoHelper.h; sourceTree = "<group>"; };
+		3C965D62206D6B84009972E6 /* FetchInfoHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchInfoHelper.m; sourceTree = "<group>"; };
+		3C965D64206D6C04009972E6 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		3C965D3A206D672C009972E6 /* Fetch-Data-And-Show-In-Table */ = {
 			isa = PBXGroup;
 			children = (
+				3C965D60206D6B54009972E6 /* Helper */,
 				3C965D5C206D6A3E009972E6 /* Model */,
 				3C965D51206D682F009972E6 /* Controller */,
 				3C965D3B206D672C009972E6 /* AppDelegate.h */,
@@ -69,6 +74,7 @@
 				3C965D46206D672C009972E6 /* LaunchScreen.storyboard */,
 				3C965D49206D672C009972E6 /* Info.plist */,
 				3C965D4A206D672C009972E6 /* main.m */,
+				3C965D64206D6C04009972E6 /* Config.h */,
 			);
 			path = "Fetch-Data-And-Show-In-Table";
 			sourceTree = "<group>";
@@ -90,6 +96,15 @@
 				3C965D5E206D6A83009972E6 /* Info.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3C965D60206D6B54009972E6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3C965D61206D6B84009972E6 /* FetchInfoHelper.h */,
+				3C965D62206D6B84009972E6 /* FetchInfoHelper.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C965D63206D6B84009972E6 /* FetchInfoHelper.m in Sources */,
 				3C965D4B206D672C009972E6 /* main.m in Sources */,
 				3C965D5F206D6A83009972E6 /* Info.m in Sources */,
 				3C965D5A206D68C0009972E6 /* MainViewController.m in Sources */,
