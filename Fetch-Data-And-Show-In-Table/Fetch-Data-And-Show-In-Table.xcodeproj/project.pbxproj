@@ -15,6 +15,7 @@
 		3C965D5B206D68C0009972E6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C965D59206D68C0009972E6 /* MainViewController.xib */; };
 		3C965D5F206D6A83009972E6 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D5E206D6A83009972E6 /* Info.m */; };
 		3C965D63206D6B84009972E6 /* FetchInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D62206D6B84009972E6 /* FetchInfoHelper.m */; };
+		FDD5DE41D8848C06E1A4B898 /* libPods-Fetch-Data-And-Show-In-Table.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A01F7B4914725E92F79DD6 /* libPods-Fetch-Data-And-Show-In-Table.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		3C965D61206D6B84009972E6 /* FetchInfoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchInfoHelper.h; sourceTree = "<group>"; };
 		3C965D62206D6B84009972E6 /* FetchInfoHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchInfoHelper.m; sourceTree = "<group>"; };
 		3C965D64206D6C04009972E6 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		763C318B3E092D0BD517D239 /* Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fetch-Data-And-Show-In-Table/Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig"; sourceTree = "<group>"; };
+		C2A01F7B4914725E92F79DD6 /* libPods-Fetch-Data-And-Show-In-Table.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fetch-Data-And-Show-In-Table.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F275E32990B33A7FCF5B217D /* Pods-Fetch-Data-And-Show-In-Table.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch-Data-And-Show-In-Table.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fetch-Data-And-Show-In-Table/Pods-Fetch-Data-And-Show-In-Table.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD5DE41D8848C06E1A4B898 /* libPods-Fetch-Data-And-Show-In-Table.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3FAF120F0F4C4B6EE6D846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2A01F7B4914725E92F79DD6 /* libPods-Fetch-Data-And-Show-In-Table.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3C965D2F206D672B009972E6 = {
 			isa = PBXGroup;
 			children = (
 				3C965D3A206D672C009972E6 /* Fetch-Data-And-Show-In-Table */,
 				3C965D39206D672C009972E6 /* Products */,
+				A4BB73F66838B726B922A8EF /* Pods */,
+				0D3FAF120F0F4C4B6EE6D846 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,15 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		A4BB73F66838B726B922A8EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				763C318B3E092D0BD517D239 /* Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig */,
+				F275E32990B33A7FCF5B217D /* Pods-Fetch-Data-And-Show-In-Table.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C965D4E206D672C009972E6 /* Build configuration list for PBXNativeTarget "Fetch-Data-And-Show-In-Table" */;
 			buildPhases = (
+				2ABE63BA707240D51C83EFE8 /* [CP] Check Pods Manifest.lock */,
 				3C965D34206D672B009972E6 /* Sources */,
 				3C965D35206D672B009972E6 /* Frameworks */,
 				3C965D36206D672B009972E6 /* Resources */,
+				0A61D9C31BB68117048AEE99 /* [CP] Embed Pods Frameworks */,
+				DA558D564D851DA8C4B8D128 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A61D9C31BB68117048AEE99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fetch-Data-And-Show-In-Table/Pods-Fetch-Data-And-Show-In-Table-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ABE63BA707240D51C83EFE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fetch-Data-And-Show-In-Table-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA558D564D851DA8C4B8D128 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fetch-Data-And-Show-In-Table/Pods-Fetch-Data-And-Show-In-Table-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C965D34206D672B009972E6 /* Sources */ = {
@@ -306,10 +384,12 @@
 		};
 		3C965D4F206D672C009972E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763C318B3E092D0BD517D239 /* Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Fetch-Data-And-Show-In-Table/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tanjimhossainsifat.Fetch-Data-And-Show-In-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -319,10 +399,12 @@
 		};
 		3C965D50206D672C009972E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F275E32990B33A7FCF5B217D /* Pods-Fetch-Data-And-Show-In-Table.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Fetch-Data-And-Show-In-Table/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tanjimhossainsifat.Fetch-Data-And-Show-In-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
