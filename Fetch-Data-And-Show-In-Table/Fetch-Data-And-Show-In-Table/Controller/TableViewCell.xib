@@ -40,12 +40,22 @@
                         <color key="textColor" red="0.048823527132794697" green="0.044174230532814329" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cm8-0Y-vcY">
+                        <rect key="frame" x="0.0" y="77.5" width="320" height="2"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Maa-rV-Ik6"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="xSq-r1-kiQ" firstAttribute="top" secondItem="XN8-DF-ebE" secondAttribute="bottom" id="0tc-v5-Lw9"/>
+                    <constraint firstItem="cm8-0Y-vcY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AV6-T2-LdV"/>
                     <constraint firstItem="xSq-r1-kiQ" firstAttribute="leading" secondItem="XN8-DF-ebE" secondAttribute="leading" id="BUF-3k-whQ"/>
                     <constraint firstItem="XN8-DF-ebE" firstAttribute="leading" secondItem="7v5-WO-5Ze" secondAttribute="leading" id="HJD-pO-fDg"/>
                     <constraint firstItem="7v5-WO-5Ze" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="asU-yd-9be"/>
+                    <constraint firstAttribute="bottom" secondItem="cm8-0Y-vcY" secondAttribute="bottom" id="br1-l0-wIL"/>
+                    <constraint firstAttribute="trailing" secondItem="cm8-0Y-vcY" secondAttribute="trailing" id="fGZ-SS-DdY"/>
                     <constraint firstAttribute="trailing" secondItem="7v5-WO-5Ze" secondAttribute="trailing" constant="16" id="i5f-Od-EZj"/>
                     <constraint firstItem="7v5-WO-5Ze" firstAttribute="bottom" secondItem="XN8-DF-ebE" secondAttribute="top" id="ijg-Ui-fVH"/>
                     <constraint firstItem="XN8-DF-ebE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mzd-SD-8uj"/>
