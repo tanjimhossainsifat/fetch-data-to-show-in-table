@@ -64,7 +64,7 @@
         return false;
     }
     
-    NSMutableString *sql;
+    NSMutableString *sql = [[NSMutableString alloc] init];
     
     for (Info *eachInfo in infoList) {
         
@@ -74,10 +74,13 @@
         NSString *info3 = eachInfo.info3;
         
         
-        NSString *insertSql = [NSString stringWithFormat:@"INSERT INTO table (id, info1, info2, info3) VALUES(%ld, '%@', '%@','%@') ON DUPLICATE KEY UPDATE info1='%@', info2='%@', info3='%@';",id,info1, info2, info3, info1, info2, info3];
+        NSString *insertSql = [NSString stringWithFormat:@"INSERT INTO table1 (id, info1, info2, info3) VALUES(%ld, '%@', '%@','%@');",id,info1, info2, info3];
+//        NSLog(@"%@",insertSql);
         
         [sql appendString:insertSql];
     }
+    
+    NSLog(@"%@",sql);
     
     BOOL isInserted = [db executeStatements:sql];
     
@@ -96,7 +99,10 @@
     
     NSMutableArray *infoList = [[NSMutableArray alloc] init];
     
+    
+    
     FMResultSet *s = [db executeQuery:@"SELECT * FROM table1"];
+    
     while ([s next]) {
         
         Info *info = [[Info alloc] init];

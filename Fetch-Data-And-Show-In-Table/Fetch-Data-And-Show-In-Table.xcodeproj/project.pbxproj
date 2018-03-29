@@ -16,6 +16,8 @@
 		3C965D5F206D6A83009972E6 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D5E206D6A83009972E6 /* Info.m */; };
 		3C965D63206D6B84009972E6 /* FetchInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D62206D6B84009972E6 /* FetchInfoHelper.m */; };
 		3C965D67206D797E009972E6 /* DatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D66206D797E009972E6 /* DatabaseHelper.m */; };
+		3C965D6B206D8A62009972E6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D69206D8A62009972E6 /* TableViewCell.m */; };
+		3C965D6C206D8A62009972E6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C965D6A206D8A62009972E6 /* TableViewCell.xib */; };
 		FDD5DE41D8848C06E1A4B898 /* libPods-Fetch-Data-And-Show-In-Table.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A01F7B4914725E92F79DD6 /* libPods-Fetch-Data-And-Show-In-Table.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,9 @@
 		3C965D64206D6C04009972E6 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		3C965D65206D797E009972E6 /* DatabaseHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseHelper.h; sourceTree = "<group>"; };
 		3C965D66206D797E009972E6 /* DatabaseHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseHelper.m; sourceTree = "<group>"; };
+		3C965D68206D8A62009972E6 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		3C965D69206D8A62009972E6 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		3C965D6A206D8A62009972E6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		763C318B3E092D0BD517D239 /* Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fetch-Data-And-Show-In-Table/Pods-Fetch-Data-And-Show-In-Table.debug.xcconfig"; sourceTree = "<group>"; };
 		C2A01F7B4914725E92F79DD6 /* libPods-Fetch-Data-And-Show-In-Table.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fetch-Data-And-Show-In-Table.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F275E32990B33A7FCF5B217D /* Pods-Fetch-Data-And-Show-In-Table.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fetch-Data-And-Show-In-Table.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fetch-Data-And-Show-In-Table/Pods-Fetch-Data-And-Show-In-Table.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +108,9 @@
 				3C965D57206D68C0009972E6 /* MainViewController.h */,
 				3C965D58206D68C0009972E6 /* MainViewController.m */,
 				3C965D59206D68C0009972E6 /* MainViewController.xib */,
+				3C965D68206D8A62009972E6 /* TableViewCell.h */,
+				3C965D69206D8A62009972E6 /* TableViewCell.m */,
+				3C965D6A206D8A62009972E6 /* TableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C965D48206D672C009972E6 /* LaunchScreen.storyboard in Resources */,
+				3C965D6C206D8A62009972E6 /* TableViewCell.xib in Resources */,
 				3C965D5B206D68C0009972E6 /* MainViewController.xib in Resources */,
 				3C965D45206D672C009972E6 /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C965D6B206D8A62009972E6 /* TableViewCell.m in Sources */,
 				3C965D67206D797E009972E6 /* DatabaseHelper.m in Sources */,
 				3C965D63206D6B84009972E6 /* FetchInfoHelper.m in Sources */,
 				3C965D4B206D672C009972E6 /* main.m in Sources */,

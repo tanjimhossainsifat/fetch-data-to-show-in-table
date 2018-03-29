@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FetchInfoHelper.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <NewInfoAddedDelegate, UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

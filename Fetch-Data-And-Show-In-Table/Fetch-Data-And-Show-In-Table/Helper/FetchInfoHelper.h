@@ -8,7 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol NewInfoAddedDelegate<NSObject>
+
+- (void) newInfoAdded;
+
+@end
+
 @interface FetchInfoHelper : NSObject
+
+@property (nonatomic, assign) id<NewInfoAddedDelegate> delegate;
+
 
 - (void) fetchInfo;
 

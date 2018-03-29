@@ -33,6 +33,10 @@
           if(isInserted) {
               
               NSLog(@"Data inserted or updated in database");
+              
+              if(self.delegate && [self.delegate respondsToSelector:@selector(newInfoAdded)]) {
+                  [self.delegate newInfoAdded];
+              }
           }
           else {
               NSLog(@"Data not inserted or updated in database");
