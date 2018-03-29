@@ -9,6 +9,7 @@
 #import "FetchInfoHelper.h"
 #include "Config.h"
 #include "Info.h"
+#import "DatabaseHelper.h"
 
 @implementation FetchInfoHelper
 
@@ -27,6 +28,16 @@
           NSString *myString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
           NSLog(@"Data received: %@", myString);
           NSArray *infoList = [self parseInfoList:data];
+          
+          BOOL isInserted = [[DatabaseHelper sharedInstance] insertInfoList:infoList];
+          if(isInserted) {
+              
+              NSLog(@"Data inserted or updated in database");
+          }
+          else {
+              NSLog(@"Data not inserted or updated in database");
+          }
+          
           
       }] resume];
 }

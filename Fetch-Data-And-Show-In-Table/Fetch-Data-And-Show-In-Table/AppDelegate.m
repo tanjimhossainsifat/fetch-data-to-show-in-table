@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "DatabaseHelper.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    DatabaseHelper *dbHelper = [DatabaseHelper sharedInstance];
+    
+    if(!dbHelper) {
+        NSLog(@"Database creation error");
+        return NO;
+    }
+    else {
+        NSLog(@"Database creation successful");
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     UIViewController *mainVC = [[MainViewController alloc] init];
