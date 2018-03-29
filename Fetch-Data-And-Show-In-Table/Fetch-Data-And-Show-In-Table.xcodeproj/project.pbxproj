@@ -13,6 +13,7 @@
 		3C965D4B206D672C009972E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D4A206D672C009972E6 /* main.m */; };
 		3C965D5A206D68C0009972E6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D58206D68C0009972E6 /* MainViewController.m */; };
 		3C965D5B206D68C0009972E6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C965D59206D68C0009972E6 /* MainViewController.xib */; };
+		3C965D5F206D6A83009972E6 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C965D5E206D6A83009972E6 /* Info.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		3C965D57206D68C0009972E6 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3C965D58206D68C0009972E6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3C965D59206D68C0009972E6 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3C965D5D206D6A83009972E6 /* Info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		3C965D5E206D6A83009972E6 /* Info.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		3C965D3A206D672C009972E6 /* Fetch-Data-And-Show-In-Table */ = {
 			isa = PBXGroup;
 			children = (
+				3C965D5C206D6A3E009972E6 /* Model */,
 				3C965D51206D682F009972E6 /* Controller */,
 				3C965D3B206D672C009972E6 /* AppDelegate.h */,
 				3C965D3C206D672C009972E6 /* AppDelegate.m */,
@@ -77,6 +81,15 @@
 				3C965D59206D68C0009972E6 /* MainViewController.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C965D5C206D6A3E009972E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C965D5D206D6A83009972E6 /* Info.h */,
+				3C965D5E206D6A83009972E6 /* Info.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C965D4B206D672C009972E6 /* main.m in Sources */,
+				3C965D5F206D6A83009972E6 /* Info.m in Sources */,
 				3C965D5A206D68C0009972E6 /* MainViewController.m in Sources */,
 				3C965D3D206D672C009972E6 /* AppDelegate.m in Sources */,
 			);
