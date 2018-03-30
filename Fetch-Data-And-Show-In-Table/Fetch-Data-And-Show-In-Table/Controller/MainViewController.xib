@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="activityIndicatorView" destination="W2u-JJ-ALD" id="4a9-LR-OJl"/>
                 <outlet property="tableView" destination="g4T-vG-5RU" id="PYL-wf-gkT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -35,6 +36,18 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMw-GV-fNP">
+                    <rect key="frame" x="313" y="15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="Refresh"/>
+                    <connections>
+                        <action selector="onButtonRefresh:" destination="-1" eventType="touchUpInside" id="0eq-uy-Asf"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="W2u-JJ-ALD">
+                    <rect key="frame" x="169" y="325.5" width="37" height="37"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -42,10 +55,14 @@
                 <constraint firstItem="9Ff-rq-6hy" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="9vk-4o-QOb"/>
                 <constraint firstItem="9Ff-rq-6hy" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Id4-S4-Zq1"/>
                 <constraint firstItem="g4T-vG-5RU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="NkI-rB-Ys0"/>
+                <constraint firstItem="W2u-JJ-ALD" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="cGk-Ej-3jH"/>
                 <constraint firstItem="g4T-vG-5RU" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="d9N-hi-zl5"/>
                 <constraint firstItem="g4T-vG-5RU" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="eLz-ep-AO4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="JMw-GV-fNP" secondAttribute="trailing" constant="16" id="gp2-MK-aJ2"/>
                 <constraint firstItem="9Ff-rq-6hy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="j8X-27-CR9"/>
                 <constraint firstItem="9Ff-rq-6hy" firstAttribute="bottom" secondItem="g4T-vG-5RU" secondAttribute="top" id="rJe-hh-Wa1"/>
+                <constraint firstItem="JMw-GV-fNP" firstAttribute="centerY" secondItem="9Ff-rq-6hy" secondAttribute="centerY" id="w0Q-qs-NQ8"/>
+                <constraint firstItem="W2u-JJ-ALD" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="xqA-3z-uD9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="34.5" y="54.5"/>

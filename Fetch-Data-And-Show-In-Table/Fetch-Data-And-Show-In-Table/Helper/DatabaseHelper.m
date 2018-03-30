@@ -64,8 +64,6 @@
         return false;
     }
     
-    NSMutableString *sql = [[NSMutableString alloc] init];
-    
     for (Info *eachInfo in infoList) {
         
         NSInteger id = eachInfo.id;
@@ -77,16 +75,14 @@
         NSString *insertSql = [NSString stringWithFormat:@"INSERT INTO table1 (id, info1, info2, info3) VALUES(%ld, '%@', '%@','%@');",id,info1, info2, info3];
 //        NSLog(@"%@",insertSql);
         
-        [sql appendString:insertSql];
+//        [sql appendString:insertSql];
+        
+        [db executeStatements:insertSql];
     }
-    
-    NSLog(@"%@",sql);
-    
-    BOOL isInserted = [db executeStatements:sql];
     
     [db close];
     
-    return isInserted;
+    return true;
     
 }
 

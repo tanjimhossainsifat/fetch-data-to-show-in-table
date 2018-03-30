@@ -11,6 +11,7 @@
 @protocol NewInfoAddedDelegate<NSObject>
 
 - (void) newInfoAdded;
+- (void) noInfoAdded;
 
 @end
 

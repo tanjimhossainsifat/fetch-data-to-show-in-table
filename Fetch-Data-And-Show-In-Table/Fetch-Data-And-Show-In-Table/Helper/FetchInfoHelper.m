@@ -40,6 +40,10 @@
           }
           else {
               NSLog(@"Data not inserted or updated in database");
+              
+              if(self.delegate && [self.delegate respondsToSelector:@selector(noInfoAdded)]) {
+                  [self.delegate noInfoAdded];
+              }
           }
           
           

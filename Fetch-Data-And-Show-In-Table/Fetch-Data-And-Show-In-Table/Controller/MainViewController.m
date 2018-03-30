@@ -40,6 +40,11 @@
 
 - (void) fetchDataByAPI {
     
+    dispatch_async(dispatch_get_main_queue(), ^{
+       
+        [self.activityIndicatorView startAnimating];
+    });
+    
     FetchInfoHelper *fetchInfoHelper = [[FetchInfoHelper alloc] init];
     fetchInfoHelper.delegate = self;
     [fetchInfoHelper fetchInfo];
@@ -52,6 +57,14 @@
     dispatch_async(dispatch_get_main_queue(), ^{
        
         [self.tableView reloadData];
+        [self.activityIndicatorView stopAnimating];
+    });
+}
+
+- (void) noInfoAdded {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.activityIndicatorView stopAnimating];
     });
 }
 
@@ -93,4 +106,8 @@
 
 #pragma mark - UITableViewDelegate
 
+- (IBAction)onButtonRefresh:(id)sender {
+    
+    [self fetchDataByAPI];
+}
 @end

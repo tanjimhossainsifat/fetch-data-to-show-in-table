@@ -12,5 +12,8 @@
 @interface MainViewController : UIViewController <NewInfoAddedDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
+
+- (IBAction)onButtonRefresh:(id)sender;
 
 @end
